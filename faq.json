@@ -1,0 +1,92 @@
+[
+  {
+    "category": "Library",
+    "question": "What are the library timings?",
+    "answer": "The library is open from 9:00 AM to 6:00 PM on all working days. It remains closed on Sundays and public holidays."
+  },
+  {
+    "category": "Library",
+    "question": "How many books can I borrow at a time?",
+    "answer": "Undergraduate students can borrow up to 3 books at a time for a period of 14 days. Postgraduate students can borrow up to 5 books."
+  },
+  {
+    "category": "Placements",
+    "question": "Where is the placement cell?",
+    "answer": "The placement cell is located on the second floor of the Administrative Block, next to the Dean's office."
+  },
+  {
+    "category": "Placements",
+    "question": "How can I apply for placements?",
+    "answer": "Register on the placement portal using your college email ID, upload your resume, and keep an eye on notices for eligible drives."
+  },
+  {
+    "category": "Placements",
+    "question": "What is the minimum CGPA required for placements?",
+    "answer": "Most companies require a minimum CGPA of 6.0, though this varies by company. Check individual drive notifications for exact eligibility criteria."
+  },
+  {
+    "category": "Clubs",
+    "question": "What clubs are available?",
+    "answer": "The college has several clubs including the Coding Club, Robotics Club, Cultural Club, Photography Club, Literary Club, and Entrepreneurship Cell (E-Cell)."
+  },
+  {
+    "category": "Clubs",
+    "question": "How can I join a club?",
+    "answer": "Visit the Student Affairs Office or register during the club recruitment drive held at the start of each semester."
+  },
+  {
+    "category": "Hostel",
+    "question": "What are the hostel fees?",
+    "answer": "Hostel fees vary by room type: Rs. 60,000/year for shared rooms and Rs. 90,000/year for single rooms, including mess charges."
+  },
+  {
+    "category": "Hostel",
+    "question": "What is the hostel curfew time?",
+    "answer": "The hostel gates close at 9:30 PM on weekdays and 10:30 PM on weekends. Late entry requires prior permission from the warden."
+  },
+  {
+    "category": "Hostel",
+    "question": "Is mess food included in hostel fees?",
+    "answer": "Yes, mess charges are included in the hostel fee. The mess offers vegetarian and non-vegetarian meal options."
+  },
+  {
+    "category": "Academics",
+    "question": "What is the attendance requirement?",
+    "answer": "Students must maintain at least 75% attendance in each subject to be eligible to sit for semester examinations."
+  },
+  {
+    "category": "Academics",
+    "question": "When do semester exams start?",
+    "answer": "Semester examination dates are announced through the official academic calendar and college portal, typically at the end of each semester."
+  },
+  {
+    "category": "Academics",
+    "question": "Who is the HOD of CSE?",
+    "answer": "Dr. Ramesh Kumar is the Head of the Department for Computer Science and Engineering. You can reach the CSE office on the third floor of the Academic Block."
+  },
+  {
+    "category": "Academics",
+    "question": "How can I apply for a re-evaluation?",
+    "answer": "Submit a re-evaluation request form along with the prescribed fee at the Examination Cell within 10 days of result declaration."
+  },
+  {
+    "category": "Fees",
+    "question": "What is the semester fee?",
+    "answer": "The semester fee varies by department and program. Please check the Fee Structure section on the college portal or contact the Accounts Office for exact figures."
+  },
+  {
+    "category": "Fees",
+    "question": "What is the last date to pay fees?",
+    "answer": "Fee payment deadlines are announced at the start of each semester via the college portal and notice boards, usually within the first two weeks of the semester."
+  },
+  {
+    "category": "General",
+    "question": "Where is the Administrative Block located?",
+    "answer": "The Administrative Block is the main building at the college entrance, housing the Principal's office, Accounts, and Admissions."
+  },
+  {
+    "category": "General",
+    "question": "What are the college working hours?",
+    "answer": "The college operates from 9:00 AM to 4:30 PM, Monday through Saturday, with Saturdays reserved for labs and activity sessions."
+  }
+]

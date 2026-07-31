@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CampusBot — AI College Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="scene">
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">CB</span>
+        <div class="brand-text">
+          <h1>CampusBot</h1>
+          <p class="brand-sub">Your always-on campus front desk</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button id="historyToggle" class="icon-btn" title="Chat history" aria-label="Chat history">☰</button>
+        <button id="darkToggle" class="icon-btn" title="Toggle dark mode" aria-label="Toggle dark mode">◐</button>
+        <button id="downloadBtn" class="icon-btn" title="Download chat as PDF" aria-label="Download chat">⬇</button>
+      </div>
+    </header>
+
+    <div class="layout">
+
+      <aside id="historyPanel" class="history-panel hidden">
+        <div class="history-head">
+          <span>Past conversations</span>
+          <button id="closeHistory" class="icon-btn small" aria-label="Close">✕</button>
+        </div>
+        <ul id="historyList" class="history-list"></ul>
+        <button id="newChatBtn" class="new-chat-btn">+ New conversation</button>
+      </aside>
+
+      <main class="chat-shell">
+
+        <div id="chatWindow" class="chat-window" aria-live="polite">
+          <div class="msg-row bot">
+            <div class="avatar bot-avatar">🤖</div>
+            <div class="bubble bot-bubble">
+              <p>Hi, I'm CampusBot. Ask me about admissions, placements, clubs, hostel, library, fees, or academic rules — I'll pull the answer from official college info.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="suggestionRow" class="suggestion-row"></div>
+
+        <form id="chatForm" class="composer">
+          <button type="button" id="micBtn" class="icon-btn mic-btn" title="Voice input" aria-label="Voice input">🎤</button>
+          <input
+            id="messageInput"
+            type="text"
+            placeholder="Ask about library timings, placements, hostel fees…"
+            autocomplete="off"
+            aria-label="Type your question"
+          />
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+        <p class="disclaimer">CampusBot answers from official college FAQs. For anything unclear, contact the college office.</p>
+      </main>
+    </div>
+  </div>
+
+  <template id="userMsgTemplate">
+    <div class="msg-row user">
+      <div class="bubble user-bubble"><p></p></div>
+      <div class="avatar user-avatar">🎓</div>
+    </div>
+  </template>
+
+  <template id="botMsgTemplate">
+    <div class="msg-row bot">
+      <div class="avatar bot-avatar">🤖</div>
+      <div class="bubble bot-bubble">
+        <p></p>
+        <div class="feedback-row">
+          <span class="feedback-label">Was this helpful?</span>
+          <button class="feedback-btn" data-value="yes" aria-label="Yes, helpful">👍</button>
+          <button class="feedback-btn" data-value="no" aria-label="Not helpful">👎</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="typingTemplate">
+    <div class="msg-row bot typing-row">
+      <div class="avatar bot-avatar">🤖</div>
+      <div class="bubble bot-bubble typing-bubble">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </div>
+  </template>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
