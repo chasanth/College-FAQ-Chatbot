@@ -18,57 +18,55 @@ A simple AI chatbot built in a day to answer common student questions about admi
 - **Data:** JSON file (`faq.json`)
 
 ## How It Works
-Student
-│
-▼
-┌─────────┐
-│ Frontend │ (HTML/CSS/JS chat UI)
-└────┬────┘
-│
-▼
-┌─────────────┐
-│ Flask Backend │
-└──────┬────────┘
-│
-▼
-┌───────────────┐
-│ Load faq.json │
-└──────┬─────────┘
-│
-▼
-┌─────────────────────────┐
-│ Send Question + Context │
-│ to Groq API │
-└──────────┬────────────────┘
-│
-▼
-┌───────────────┐
-│ AI Response │
-└──────┬─────────┘
-│
-▼
-┌────────────────┐
-│ Display Answer │
-└────────────────┘
 
+Student
+  │
+  ▼
+┌──────────┐
+│ Frontend │  (HTML/CSS/JS chat UI)
+└────┬─────┘
+     │
+     ▼
+┌────────────────┐
+│ Flask Backend   │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Load faq.json    │
+└────────┬─────────┘
+         │
+         ▼
+┌───────────────────────────┐
+│ Send Question + Context    │
+│ to Groq API                │
+└──────────────┬─────────────┘
+               │
+               ▼
+┌────────────────┐
+│ AI Response      │
+└────────┬─────────┘
+         │
+         ▼
+┌───────────────────┐
+│ Display Answer      │
+└─────────────────────┘
 
 ## Project Structure
 
 college-chatbot/
 │
-├── app.py ← Flask backend + Groq integration
-├── faq.json ← College knowledge base
-├── requirements.txt
-├── .env ← API key (not committed)
+├── app.py              # Flask backend + Groq integration
+├── faq.json             # College knowledge base
+├── requirements.txt      # Python dependencies
+├── .env                  # API key (not committed)
 │
 ├── templates/
-│ └── index.html ← Chat UI
+│   └── index.html        # Chat UI
 │
 └── static/
-├── style.css ← Styling
-└── script.js ← Frontend logic
-
-
+    ├── style.css          # Styling
+    └── script.js          # Frontend logic
 ## Setup
 
 ```bash
