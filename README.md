@@ -19,38 +19,27 @@ A simple AI chatbot built in a day to answer common student questions about admi
 
 ## How It Works
 
+```
 Student
-  │
-  ▼
-┌──────────┐
-│ Frontend │  (HTML/CSS/JS chat UI)
-└────┬─────┘
-     │
-     ▼
-┌────────────────┐
-│ Flask Backend   │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│ Load faq.json    │
-└────────┬─────────┘
-         │
-         ▼
-┌───────────────────────────┐
-│ Send Question + Context    │
-│ to Groq API                │
-└──────────────┬─────────────┘
-               │
-               ▼
-┌────────────────┐
-│ AI Response      │
-└────────┬─────────┘
-         │
-         ▼
-┌───────────────────┐
-│ Display Answer      │
-└─────────────────────┘
+  |
+  v
+Frontend (HTML/CSS/JS chat UI)
+  |
+  v
+Flask Backend
+  |
+  v
+Load faq.json
+  |
+  v
+Send Question + Context to Groq API
+  |
+  v
+AI Response
+  |
+  v
+Display Answer
+```
 
 ## Project Structure
 
